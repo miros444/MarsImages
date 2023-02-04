@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+
+  background-image: url("https://www.worldatlas.com/upload/bb/c3/32/shutterstock-1041249343.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  margin-top: 50px;
+  color: rgb(217, 120, 85);
+  text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+}
+
+form {
+  margin-top: 50px;
+  display: inline-block;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: rgb(217, 120, 85);
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+input[type="number"] {
+  padding: 10px;
+  font-size: 16px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color:  rgb(217, 120, 85);
+}
+
+#image-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#loading-message {
+  font-family: coolFont;
+  font-size: 20px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+#progress-bar-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#progress-bar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: solid 5px #4CAF50;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
