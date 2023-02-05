@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mars Rover Images</title>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -12,7 +13,14 @@
     <input type="number" id="sol-number" name="sol-number" required>
     <button type="submit">Submit</button>
   </form>
-  <div id="image-container"></div>
+  <div id="image-container">
+    <img id="mars-image" style="display: none; border: 6px solid #4CAF50; border-radius: 10px; box-shadow: 0 0 10px #4CAF50;">
+    <p id="error-message" style="display: none;">Image not found. Choose another sol.</p>
+  </div>
+  <div id="progress-bar-container" style="display: none;">
+    <div id="progress-bar"></div>
+  </div>
   <script src="app.js"></script>
 </body>
 </html>
+

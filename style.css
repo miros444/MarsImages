@@ -1,16 +1,16 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-align: center;
 
-  background-image: url("https://www.worldatlas.com/upload/bb/c3/32/shutterstock-1041249343.jpg");
+  background-image: url("https://cdn1.epicgames.com/ue/product/Screenshot/GigaMars00007Layer%201-1920x1080-f4b1ab3ad4f27c50e98dd7f86e65f6c8.jpg?resize=1&w=1920");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 h1 {
   margin-top: 50px;
-  color: rgb(217, 120, 85);
-  text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+  color:  rgb(217, 120, 85);
+  text-shadow: 0px 1.5px 1px   rgb(254, 252, 252), 0 0 60px  rgb(248, 247, 246), 0 0 1px rgb(6, 6, 6);
 }
 
 form {
@@ -23,7 +23,7 @@ label {
   display: block;
   margin-bottom: 10px;
   color: rgb(217, 120, 85);
-  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  text-shadow: 10px 5px 2 px 0 rgb(169, 33, 33), 0 2px rgb(175, 20, 20), 2px 0 rgb(5, 5, 5), 0 -2px black;
 }
 
 input[type="number"] {
@@ -50,31 +50,41 @@ button[type="submit"]:hover {
 
 #image-container {
   text-align: center;
+  color: rgb(10, 10, 10);
   margin-top: 50px;
+  text-shadow: 0px 1.5px 1px  rgb(30, 30, 30), 0 0 60px  rgb(3, 3, 3), 0 0 30px rgb(6, 6, 6);
 }
 
 #loading-message {
-  font-family: coolFont;
-  font-size: 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 15px;
   margin-top: 50px;
   text-align: center;
 }
 
 #progress-bar-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  position: relative;
 }
 
 #progress-bar {
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
-  border: solid 5px #4CAF50;
-  animation: spin 1s linear infinite;
+  border: 6px solid #4CAF50;
+  border-top-color: #090909;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  animation: progress-bar-animation 1s ease-in-out infinite;
 }
 
-@keyframes spin {
+@keyframes progress-bar-animation {
   0% {
     transform: rotate(0deg);
   }
@@ -82,3 +92,87 @@ button[type="submit"]:hover {
     transform: rotate(360deg);
   }
 }
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+
+
+
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 600px) {
+  body {
+  background-size: contain;
+  }
+  
+  h1 {
+  margin-top: 20px;
+  font-size: 28px;
+  }
+  
+  form {
+  margin-top: 20px;
+  display: block;
+  }
+  
+  label {
+  font-size: 18px;
+  }
+  
+  input[type="number"] {
+  width: 100%;
+  }
+  
+  button[type="submit"] {
+  width: 100%;
+  margin-top: 20px;
+  }
+  
+  #image-container {
+  margin-top: 20px;
+  }
+  
+  #loading-message {
+  font-size: 12px;
+  }
+  }
+  
+  /* Add styles for larger screens */
+  @media only screen and (min-width: 600px) {
+  body {
+  background-size: cover;
+  }
+  
+  h1 {
+  margin-top: 50px;
+  font-size: 40px;
+  }
+  
+  form {
+  margin-top: 50px;
+  display: inline-block;
+  }
+  
+  label {
+  font-size: 20px;
+  }
+  
+  input[type="number"] {
+  width: 200px;
+  }
+  
+  button[type="submit"] {
+  width: auto;
+  margin-top: 0;
+  }
+  
+  #image-container {
+  margin-top: 50px;
+  }
+  
+  #loading-message {
+  font-size: 15px;
+  }
+  }
