@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script src="https://cdn.jsdelivr.net/npm/circle-progress@1.2.2/dist/circle-progress.min.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mars Rover Images</title>
@@ -13,6 +14,7 @@
     <input type="number" id="sol-number" name="sol-number" required>
     <button type="submit">Submit</button>
   </form>
+  <div id="loading-circle"></div>
   <div id="image-container">
     <img id="mars-image" style="display: none; border: 6px solid #4CAF50; border-radius: 10px; box-shadow: 0 0 10px #4CAF50;">
     <p id="error-message" style="display: none;">Image not found. Choose another sol.</p>
