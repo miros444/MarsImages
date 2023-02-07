@@ -1,8 +1,9 @@
-@import url('./MarsBG.jpeg');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@200&display=swap');
+
 body {
   font-family: 'Heebo', sans-serif;
   text-align: center;
-  background-image: url("https://cdn1.epicgames.com/ue/product/Screenshot/GigaMars00007Layer%201-1920x1080-f4b1ab3ad4f27c50e98dd7f86e65f6c8.jpg?resize=1&w=1920");
+  background-image: url("./MarsBG.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
 }
