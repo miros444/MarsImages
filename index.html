@@ -7,21 +7,40 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <h1>Mars Rover Images</h1>
-  <form>
-    <label for="sol-number">Sol Number:</label>
-    <input type="number" id="sol-number" name="sol-number" required>
-    <button type="submit">Submit</button>
-  </form>
-  <div id="loading-circle"></div>
-  <div id="image-container">
-    <img id="mars-image" style="display: none; border: 6px solid #4CAF50; border-radius: 10px; box-shadow: 0 0 10px #4CAF50;">
-    <p id="error-message" style="display: none;">Image not found. Choose another sol.</p>
-  </div>
-  <div id="progress-bar-container" style="display: none;">
-    <div id="progress-bar"></div>
-  </div>
-  <script src="app.js"></script>
+  <div  style="position: absolute;z-index: -1;">
+    <img class="marsIMG" src="./MarsBG.jpeg" alt="mars" style="z-index: 5; position: absolute;">
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+      <div id='stars'></div>
+      <div id='stars2'></div>
+      <div id='stars3'></div>
+      <div id='title'>
+        <span>
+        
+        </span>
+        <br>
+        <span>
+          
+        </span>
+      </div>
+    </div>
+      <h1>Mars Curiosity Rover Images</h1>
+      <form>
+        <label for="sol-number">Sol Number:</label>
+        <input type="number" id="sol-number" name="sol-number" required>
+        <button type="submit">Submit</button>
+      </form>
+      <div id="loading-circle"></div>
+      <div id="image-container">
+        <img id="mars-image" style="display: none; border: 6px solid #4CAF50; border-radius: 10px; box-shadow: 0 0 10px #4CAF50;">
+        <p id="error-message" style="display: none;">Image not found. Choose another sol.</p>
+      </div>
+      <div id="progress-bar-container" style="display: none;">
+        <div id="progress-bar"></div>
+      </div>
+      <script src="app.js"></script>
+
+
 </body>
 </html>
 
