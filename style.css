@@ -18,9 +18,13 @@ body {
 
 h1 {
   margin-top: 50px;
-  color: rgb(180, 91, 57);
+  color: rgb(255, 253, 253);
   text-shadow: 0px 0px 2px rgb(254, 252, 252), 0 0 60px  rgb(248, 247, 246), 0 0 1px rgb(6, 6, 6);
   font-size: 48px;
+}
+
+h1:hover{
+  color:  rgb(180, 91, 57);
 }
 
 form {
@@ -30,12 +34,12 @@ form {
   padding: 15px;
   background-color: "";
   border-radius: 20px;
-  box-shadow: 0px 0px 15px rgba(9, 9, 9, 1);
+  box-shadow: 0px 0px 15px rgba(9, 9, 9, 0);
   transition: 0.3s;
 }
 
 form:hover{
-  box-shadow: 0px 0px 15px rgba(3, 3, 3, 0.2);
+  box-shadow: 0px 5px 10px rgba(3, 3, 3, 1);
 }
 
 
@@ -44,7 +48,7 @@ label {
   margin-bottom: 10px;
   color:  rgb(180, 91, 57);
   text-shadow: 0px 0px 2px 0 rgb(169, 33, 33), 0 2px rgb(175, 20, 20), 2px 0 rgb(5, 5, 5), 0 -2px black;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 input[type="number"] {
