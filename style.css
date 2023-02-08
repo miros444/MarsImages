@@ -27,11 +27,17 @@ form {
   margin-top: 50px;
   display: inline-block;
   text-align: left;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.7);
-  border-radius: 10px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  background-color: "";
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px rgba(9, 9, 9, 1);
+  transition: 0.3s;
 }
+
+form:hover{
+  box-shadow: 0px 0px 15px rgba(3, 3, 3, 0.2);
+}
+
 
 label {
   display: block;
@@ -210,78 +216,3 @@ html {
 
 
 
-/* Responsive styles for smaller screens */
-@media only screen and (max-width: 600px) {
-  body {
-  background-size: contain;
-  }
-  
-  h1 {
-  margin-top: 20px;
-  font-size: 28px;
-  }
-  
-  form {
-  margin-top: 20px;
-  display: block;
-  }
-  
-  label {
-  font-size: 18px;
-  }
-  
-  input[type="number"] {
-  width: 100%;
-  }
-  
-  button[type="submit"] {
-  width: 100%;
-  margin-top: 20px;
-  }
-  
-  #image-container {
-  margin-top: 20px;
-  }
-  
-  #loading-message {
-  font-size: 12px;
-  }
-  }
-  
-  /* Add styles for larger screens */
-  @media only screen and (min-width: 600px) {
-  body {
-  background-size: cover;
-  }
-  
-  h1 {
-  margin-top: 50px;
-  font-size: 40px;
-  }
-  
-  form {
-  margin-top: 50px;
-  display: inline-block;
-  }
-  
-  label {
-  font-size: 20px;
-  }
-  
-  input[type="number"] {
-  width: 200px;
-  }
-  
-  button[type="submit"] {
-  width: auto;
-  margin-top: 0;
-  }
-  
-  #image-container {
-  margin-top: 50px;
-  }
-  
-  #loading-message {
-  font-size: 15px;
-  }
-  }
