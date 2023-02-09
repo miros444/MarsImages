@@ -26,13 +26,12 @@
     </div>
       <h1>Mars Curiosity Rover Images</h1>
       <form>
-        <label for="sol-number">Sol Number:</label>
-        <input type="number" id="sol-number" name="sol-number" required>
+        <input type="number" id="solnumber" placeholder="Sol Number" required>
         <button type="submit">Submit</button>
       </form>
       <div id="loading-circle"></div>
       <div id="image-container">
-        <img id="mars-image" style="display: none; border: 6px solid #4CAF50; border-radius: 10px; box-shadow: 0 0 10px #4CAF50;">
+        <img id="mars-image" style="display: none; border: 2px solid #0d0d0d; border-radius: px; box-shadow: 0 0 10px #020202;">
         <p id="error-message" style="display: none;">Image not found. Choose another sol Please.</p>
       </div>
       <div id="progress-bar-container" style="display: none;">
