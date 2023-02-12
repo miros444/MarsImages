@@ -46,12 +46,26 @@ form.addEventListener("submit", function (event) {
       clearInterval(interval);
       if (data.photos.length === 0) {
         const errorMessage = document.createElement("p");
-        errorMessage.innerHTML = "Image not found. Choose another sol please.";
+        errorMessage.innerHTML = "Image not found. Please choose another sol.";
         errorMessage.style.fontFamily =  "heebo";
-        errorMessage.style.color = "black"
+        errorMessage.style.color = "white"
         errorMessage.style.fontSize = "30px";
         errorMessage.style.marginTop = "50px";
         errorMessage.style.textAlign = "center";
+        errorMessage.style.cssText = `
+        -webkit-text-stroke: 82px white;
+        -webkit-text-stroke: 0.5px black;
+        color:  white;
+        font-size: 35px;
+        box-shadow: 0px 30px 90px black;
+        border-radius: 20px;
+        position: relative;
+        transition: 0.3s;
+        padding: 10px;
+        display: inline-block;
+        
+`;
+
         imageContainer.innerHTML = "";
         imageContainer.appendChild(errorMessage);
       } else {
