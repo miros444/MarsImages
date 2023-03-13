@@ -1,6 +1,7 @@
 const form = document.querySelector("form");
 const imageContainer = document.querySelector("#image-container");
 const loadingMessage = document.createElement("p");
+const apiKey = new apiKey(process.env["apiKey"]
 loadingMessage.innerHTML = "";
 loadingMessage.style.fontFamily = "heebo";
 loadingMessage.style.fontSize = "20px";
@@ -22,7 +23,7 @@ progressBarContainer.appendChild(progressBar);
 form.addEventListener("submit", function (event) {
   event.preventDefault();
   const solNumber = document.querySelector("#solnumber").value;
-  const apiKey = "EtwRKhm2BiVZ22xvlmXeaYlOJGlvETLP8N1d3NvA";
+  
   const url = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=${solNumber}&api_key=${apiKey}`;
 
   imageContainer.innerHTML = "";
