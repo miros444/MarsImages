@@ -1,7 +1,7 @@
 const form = document.querySelector("form");
 const imageContainer = document.querySelector("#image-container");
 const loadingMessage = document.createElement("p");
-const apiKey = new apiKey(process.env["apiKey"]
+const apiKey = new apiKey(process.env[.apiKey]
 loadingMessage.innerHTML = "";
 loadingMessage.style.fontFamily = "heebo";
 loadingMessage.style.fontSize = "20px";
